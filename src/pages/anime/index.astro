@@ -39,8 +39,14 @@ const anime = await daftarAnimeService();
                 }}
               />
             </Content>
-            <Sidebar>
-              <WidgetTitle title="Sidebar" />
+<Sidebar>
+              <WidgetTitle title="Anime Movie" href="/movies" />
+              <AnimeList3
+                anime={{
+                  list: home.data.movie.animeList,
+                  baseUrlPath: "/anime",
+                }}
+              />
             </Sidebar>
           </Sesepuh>
         </Layout>
